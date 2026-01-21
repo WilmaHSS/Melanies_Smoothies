@@ -32,7 +32,7 @@ ingredients_list = st.multiselect(
     max_selections = 5
 )
 
-sf_df = st.dataframe(data=smoothiefroot_response.json(), use_container_width = true)
+sf_df = st.dataframe(data=smoothiefroot_response.json(), use_container_width = True)
 
 #for Phyton use 4 spaces instead of tab for indenting
 if ingredients_list:
