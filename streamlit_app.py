@@ -15,7 +15,6 @@ st.write("""Choose the fruits you want in your smoothie!""")
  #   ("Banana", "Strawberries", "Peaches"),
 #)
 
-sf_df = st.dataframe(data=smoothiefroot_response.json(), use_container_width = True)
 
 #st.write("Your favourite fruit is:", option)
 
@@ -32,6 +31,8 @@ ingredients_list = st.multiselect(
     my_dataframe,
     max_selections = 5
 )
+
+sf_df = st.dataframe(data=smoothiefroot_response.json(), use_container_width = True)
 
 #for Phyton use 4 spaces instead of tab for indenting
 if ingredients_list:
